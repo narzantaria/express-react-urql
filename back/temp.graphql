@@ -1,0 +1,70 @@
+mutation {
+  createHero(heroInput: {title: "qqqqqqqqqqqqqqq", description: "ljlkjlkjlkj", date: "2019-10-25T15:57:56.651Z"}) {
+    _id
+    title
+    description
+    date
+  }
+}
+
+mutation CreateHeroMutation($title: String!, $description: String!, $date: String!) {
+  createHero(heroInput: {title: $title, description: $description, date: $date}) {
+    _id
+    title
+    description
+    date
+  }
+}
+
+query {
+  heroes {
+    _id
+    title
+  }
+}
+
+mutation RemoveHeroMutation($id: ID!) {
+  deleteHero(heroRemove: {_id: $id}) {
+    _id
+    title
+    description
+    date
+  }
+}
+
+mutation {
+  deleteHero(heroRemove: {_id: "5db31d0c5419031a7c8d749c"}) {
+    _id
+    title
+    description
+    date
+  }
+}
+
+query HeroQuery($id: ID!) {
+  findHero(id: $id) {
+    _id
+    title
+    description
+    date
+  }
+}
+
+{
+  "id": "5ee5cf190544a322a90cedd2"
+}
+
+mutation UpdateHeroMutation($id: ID!, $title: String!, $description: String!, $date: String!) {
+  updateHero(heroUpdate: {_id: $id, title: $title, description: $description, date: $date}) {
+    _id
+    title
+    description
+    date
+  }
+}
+
+{
+  "title": "oiuyoiuyiuyiuyiuyiuyiu",
+  "description": "12345",
+  "date": "2019-11-07T03:39:43.117Z"
+}

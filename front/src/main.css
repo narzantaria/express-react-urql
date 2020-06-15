@@ -1,0 +1,85 @@
+
+.wrapper {padding: 25px 50px;}
+.sector {margin: 10px 0;}
+#up {
+  display: none;
+  padding: 10px;
+  background-color: 'sienna';
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+  cursor: pointer;
+  line-height: 0;
+  font-size: 25px;
+  border: 1px solid #37250b;
+}
+button a {color: #fff !important;}
+#logo {
+	border-right: 1px solid #fffa9d;
+  border-left: 1px solid #fffa9d;
+  position: relative;
+  height: 64px;  
+  width: 64px;
+}
+#logo .anticon {
+  font-size: 2.5em;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+.ant-menu {background-color: transparent !important;}
+.ant-menu-item:hover,
+.ant-menu-submenu-title:hover,
+.ant-menu-item-selected {
+  background-color: #37250b !important;
+  color: #fffa9d;
+}
+.ant-menu-horizontal > .ant-menu-item-selected {border-bottom: 2px solid #fffa9d !important;}
+.ant-menu-item {
+  background-color: sienna;
+  top: -1px !important;
+}
+.ant-menu-submenu {color: #fffa9d !important;}
+.ant-menu-submenu > .ant-menu {background-color: sienna !important;}
+.ant-menu-item > a:hover, .ant-menu-item > a {
+  color: #fffa9d;
+}
+.ant-menu-submenu-open, .ant-menu-submenu-selected {border-bottom: 2px solid #fffa9d !important;}
+header a {color: #fffa9d !important;}
+/*----------------------------------------*/
+.delete {
+  font-size: 1.5em;
+  color: #92000A;
+  cursor: pointer;
+  float: right;
+}
+.dark {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.35);
+  z-index: 333;
+}
+.vc {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+.ant-spin-dot-spin {
+  animation: antRotate .7s infinite linear !important;
+}
+/*----------------------------------------*/
+.line {margin: 10px 0;}
+.line h3 {}
+#buttons {
+	display: flex;
+	justify-content: end;
+}
+#buttons > * {
+	margin-left: 5px;
+}
